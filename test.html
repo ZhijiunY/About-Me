@@ -9,7 +9,10 @@
 </html>
     <body>
     <div class="Up">
-        <div class="About">About Me</div>
+        <span class="About"
+            onmouseover="over(this);" onmouseout="out(this);"
+            onmousedown="down(this);" onmouseup="up(this);"     
+        >About Me</span>
     </div>
     <div class="Center">
         <span class="content"
@@ -33,6 +36,13 @@
             onmousedown="down(this);" onmouseup="up(this);"
             >關於這份申請網頁，請分享一個你開發時的技術心得。</span>
     </div>
+    <div class="Down">
+        <span class="things"
+            onmouseover="over(this);" onmouseout="out(this);"
+            onmousedown="down(this);" onmouseup="up(this);"       
+        >其他想要對我們說的事情？</span>
+
+    </div>
     <script>
         function over(elem){
             elem.style.backgroundColor="#eeeddd";
@@ -47,9 +57,6 @@
             elem.style.fontWeight="normal";
         }
     </script>
-    <div class="Down">
-        <div class="things">其他想要對我們說的事情？</div>
-
-    </div>
+    
     
     </body>
