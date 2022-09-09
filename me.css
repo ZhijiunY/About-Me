@@ -1,0 +1,51 @@
+.Up{
+    display:flex; /* 讓下一層次的項目水平排列 */
+    justify-content:center; /*至中排列*/
+    align-items:center; /* 垂直對齊 */
+    height:150px;
+    background-color: #cccccc;
+}
+.About{
+    width:50%;
+    height:40px;
+    font-size:30px;
+    font-weight:bold; /*文字粗體*/
+    text-align:center; /*內文本的水平對齊方式*/
+}
+.Center{
+    display:flex;
+    align-items:center; /*垂直對齊*/
+    height:400px; /*高度*/
+    background-color:#eeeeee;
+    width:100%; /*寬度*/
+    text-align:center; /*內文本的水平對齊方式*/
+    float:left; /*浮動對齊*/
+    justify-content:center;
+}
+.content{
+    display:flex;
+    align-items:center; /*垂直對齊*/
+    height:350px; /*高度*/
+    background-color:#cccccc;
+    width:200px; /*寬度*/
+    margin:auto;
+    text-align:center; /*內文本的水平對齊方式*/
+    float:center; /*浮動對齊*/
+}
+
+
+.Down{
+    display:flex; /* 讓下一層次的項目水平排列 */
+    justify-content:center; /*至中排列*/
+    align-items:center; /* 垂直對齊 */
+    height:150px;
+    background-color: #cccccc;
+    width:100%;
+}
+.things{
+    width:50%;
+    height:40px;
+    font-size:25px;
+    font-weight:bold; /*文字粗體*/
+    text-align:center;
+}
