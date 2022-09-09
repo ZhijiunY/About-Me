@@ -1,8 +1,55 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title> Hello Github </title>
-  </head>
-  <body>
-    Hello Github Page
-  </body>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <title>About Me</title>
+        <link rel="stylesheet" type="text/css" href="me.css"/>
+    </head>
 </html>
+    <body>
+    <div class="Up">
+        <div class="About">About Me</div>
+    </div>
+    <div class="Center">
+        <span class="content"
+            onmouseover="over(this);" onmouseout="out(this);"
+            onmousedown="down(this);" onmouseup="up(this);"
+            >為了成為軟體工程師，曾做過什麼努力？ 若有具體專案作品請分享給我們。</span>
+        <span class="content"
+            onmouseover="over(this);" onmouseout="out(this);"
+            onmousedown="down(this);" onmouseup="up(this);"
+            >如果參與這個計畫，會怎麼安排學習時間？</span>
+        <span class="content"
+            onmouseover="over(this);" onmouseout="out(this);"
+            onmousedown="down(this);" onmouseup="up(this);"
+            >是否有想要加入的軟體公司？為什麼想加入該公司？</span>
+        <span class="content"
+            onmouseover="over(this);" onmouseout="out(this);"
+            onmousedown="down(this);" onmouseup="up(this);"
+            >請描述一件你曾經碰到最困難的事情，如何克服？</span>
+        <span class="content"
+            onmouseover="over(this);" onmouseout="out(this);"
+            onmousedown="down(this);" onmouseup="up(this);"
+            >關於這份申請網頁，請分享一個你開發時的技術心得。</span>
+    </div>
+    <script>
+        function over(elem){
+            elem.style.backgroundColor="#eeeddd";
+        }
+        function out(elem){
+            elem.style.backgroundColor="#cccccc";
+        }
+        function down(elem){
+            elem.style.fontWeight="bold";
+        }
+        function up(elem){
+            elem.style.fontWeight="normal";
+        }
+    </script>
+    <div class="Down">
+        <div class="things">其他想要對我們說的事情？</div>
+
+    </div>
+    
+    </body>
