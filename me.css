@@ -15,7 +15,7 @@
 .Center{
     display:flex;
     align-items:center; /*垂直對齊*/
-    height:400px; /*高度*/
+    height:180px; /*高度*/
     background-color:#eeeeee;
     width:100%; /*寬度*/
     text-align:center; /*內文本的水平對齊方式*/
@@ -25,7 +25,7 @@
 .content{
     display:flex;
     align-items:center; /*垂直對齊*/
-    height:350px; /*高度*/
+    height:150px; /*高度*/
     background-color:#cccccc;
     width:200px; /*寬度*/
     margin:auto;
@@ -33,12 +33,22 @@
     float:center; /*浮動對齊*/
 }
 
-
+.word{
+    display:flex;
+    align-items:center; /*垂直對齊*/
+    height:270px; /*高度*/
+    background-color:#eeeeee;
+    width:100%; /*寬度*/
+    text-align:center; /*內文本的水平對齊方式*/
+    float:left; /*浮動對齊*/
+    justify-content:center;
+    font-size:22px;
+}
 .Down{
     display:flex; /* 讓下一層次的項目水平排列 */
     justify-content:center; /*至中排列*/
     align-items:center; /* 垂直對齊 */
-    height:150px;
+    height:90px;
     background-color: #cccccc;
     width:100%;
 }
@@ -48,4 +58,35 @@
     font-size:25px;
     font-weight:bold; /*文字粗體*/
     text-align:center;
+}
+
+@media (max-width: 980px){
+    .Up{
+        flex-wrap: wrap;
+    }
+    .content{
+        width: 15%;
+        color:sienna;
+        font-size:16px;
+    }
+    .things{
+        font-size:20px;
+    }
+    .word{
+        font-size:larger;
+    }
+}
+@media (max-width: 800px){
+        .Up{
+        flex-wrap: wrap;
+    }
+    .content{
+        width: 15%;
+        font-size:12px;
+        background-color: sienna;
+        color:white;
+    }
+   .word{
+       font-size:medium;
+   }
 }
