@@ -8,56 +8,221 @@
     </head>
 </html>
     <body>
-    <div class="Up">
-        <span class="About"
-            onmouseover="over(this);" onmouseout="out(this);"
-            onmousedown="down(this);" onmouseup="up(this);"     
-        >About Me</span>
-    </div>
-    <div class="Center">
-        <span class="content"
-            onmouseover="over(this);" onmouseout="out(this);"
-            onmousedown="down(this);" onmouseup="up(this);"
-            >為了成為軟體工程師，曾做過什麼努力？ 若有具體專案作品請分享給我們。</span>
-        <span class="content"
-            onmouseover="over(this);" onmouseout="out(this);"
-            onmousedown="down(this);" onmouseup="up(this);"
-            >如果參與這個計畫，會怎麼安排學習時間？</span>
-        <span class="content"
-            onmouseover="over(this);" onmouseout="out(this);"
-            onmousedown="down(this);" onmouseup="up(this);"
-            >是否有想要加入的軟體公司？為什麼想加入該公司？</span>
-        <span class="content"
-            onmouseover="over(this);" onmouseout="out(this);"
-            onmousedown="down(this);" onmouseup="up(this);"
-            >請描述一件你曾經碰到最困難的事情，如何克服？</span>
-        <span class="content"
-            onmouseover="over(this);" onmouseout="out(this);"
-            onmousedown="down(this);" onmouseup="up(this);"
-            >關於這份申請網頁，請分享一個你開發時的技術心得。</span>
-        <span class="content"
-            onmouseover="over(this);" onmouseout="out(this);"
-            onmousedown="down(this);" onmouseup="up(this);"       
-        >其他想要對我們說的事情？</span>
-    </div>
-    
-        
+        <div class="Up">
+            <div class="About"
+                onmouseover="over(this);" onmouseout="out(this);"
+                onmousedown="down(this);" onmouseup="up(this);"
+            >
+                <span onclick="changeToAbout();">
+                    <div id="show0" onclick="show0()">About Me</div>
+                </span>
+            </div>
+        </div>
+        <div class="Center">
+            <div class="content"
+                onmouseover="over(this);" onmouseout="out(this);"
+                onmousedown="down(this);" onmouseup="up(this);"
+            >
+                <span onclick="changeToHard();">
+                    為了成為軟體工程師，曾做過什麼努力？ 若有具體專案作品請分享給我們。<br/> <br/>
+                    <div id="show1" onclick="show1()">【點擊顯示1】</div>
+                </span>
+            </div>
+            <div class="content"
+                onmouseover="over(this);" onmouseout="out(this);"
+                onmousedown="down(this);" onmouseup="up(this);"
+            >
+                <span onclick="changeToTime();">
+                    如果參與這個計畫，會怎麼安排學習時間？<br/> <br/> <br/> <br/>
+                    <div id="show2" onclick="show2()">【點擊顯示2】</div>
+                </span>
+            </div>
+            <div class="content"
+                onmouseover="over(this);" onmouseout="out(this);"
+                onmousedown="down(this);" onmouseup="up(this);"
+            >
+                <span onclick="changeToWant();">
+                    是否有想要加入的軟體公司？為什麼想加入該公司？<br/> <br/> <br/> <br/>
+                    <div id="show3" onclick="show3()">【點擊顯示3】</div>
+                </span>
+            </div>
+            <div class="content"
+                onmouseover="over(this);" onmouseout="out(this);"
+                onmousedown="down(this);" onmouseup="up(this);"
+            >
+                <span onclick="changeToOvercome();">
+                    請描述一件你曾經碰到最困難的事情，如何克服？<br/><br/><br/> <br/>
+                    <div id="show4" onclick="show4()">【點擊顯示4】</div>
+                </span>
+                
+            </div>
+            <div class="content"
+                onmouseover="over(this);" onmouseout="out(this);"
+                onmousedown="down(this);" onmouseup="up(this);"
+            >
+                <span onclick="changeToExp();">
+                    關於這份申請網頁，請分享一個你開發時的技術心得。<br/><br/><br/> <br/>
+                    <div id="show5" onclick="show5()">【點擊顯示5】</div>
+                </span>
+            </div>
+            
+        </div>
+<hr/>
+        <div class="word">
+            <div id="hide0" style="display: none;">
+                您好，我是楊芷㚬。110年畢業於勤益科技大學企業管理學系
+            </div>
+            <div id="hide1" style="display: none;">
+                這是我第一次寫程式，從YouTube偶然發現彭彭老師的課程頻道開始，學習HTML CSS 與JAVASCRIPT...等，<br/>
+                進而得知此培訓計畫，........想要參加培訓計畫，從知道計劃到準備完成所剩的時間對我來說是一個挑戰，<br/>
+                加上沒有相關經驗，這一週半的時間 花一整週的時間把影片學完，製作成目前這份網頁申請書<br/> <br/>
 
-    </div>
-    <script>
-        function over(elem){
-            elem.style.backgroundColor="#eeeddd";
-        }
-        function out(elem){
-            elem.style.backgroundColor="#cccccc";
-        }
-        function down(elem){
-            elem.style.fontWeight="bold";
-        }
-        function up(elem){
-            elem.style.fontWeight="normal";
-        }
-    </script>
-    
-    
+                目前這份申請書，是我第一個做完的程式語言專案，在這裡分享給你們。
+            </div>   
+            <div id="hide2" style="display:none;">
+                <!--放表格-->
+                <table style="border:8px #FFD382 groove;" cellpadding="10" border='0'>
+                    <tr>
+                        <td>這是表格欄位</td>
+                        <td>這是表格欄位</td>
+                        <td>這是表格欄位</td>
+                    </tr>
+                    <tr>
+                        <td>這是表格欄位</td>
+                        <td>這是表格欄位</td>
+                        <td>這是表格欄位</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="hide3" style="display:none;">
+                adslfkajlkfhwlafsdlj<br/>
+                hkjkjshdkfjskldjflskjf<br/>
+            </div>
+            <div id="hide4" style="display:none;">
+                adslfkajlkfhwlafsdlj<br/>
+                hkjkjshdkfjskldjflskjf<br/>
+            </div>
+            <div id="hide5" style="display:none;">
+                adslfkajlkfhwlafsdlj<br/>
+                hkjkjshdkfjskldjflskjf<br/>
+            </div>
+            <div id="hide6" style="display:none;">
+                adslfkajlkfhwlafsdlj<br/>
+                hkjkjshdkfjskldjflskjf<br/>
+            </div>
+            </div>
+        
+        </div>
+<hr/>
+        <div class="Down">
+            <div class="things"
+                onmouseover="over(this);" onmouseout="out(this);"
+                onmousedown="down(this);" onmouseup="up(this);"
+            >
+                <span onclick="changeToSay();">
+                    <div id="show6" onclick="show6()">其他想要對我們說的事情？</div>
+                </span>
+            </div>
+        </div> 
+<hr/>
+        <script>
+            function over(elem){
+                elem.style.backgroundColor="#eeeddd";
+            }
+            function out(elem){
+                elem.style.backgroundColor="#cccccc";
+            }
+            function down(elem){
+                elem.style.fontWeight="bold";
+            }
+            function up(elem){
+                elem.style.fontWeight="normal";
+            }
+        </script>
+        <script>
+            function show0() {
+                var show0 = document.getElementById('show0');
+                var hide0 = document.getElementById('hide0');
+                if (hide0.style.display === 'none') {
+                    hide0.style.display = 'block';
+                    show0.innerText = "About Me";
+                }
+                else {
+                    hide0.style.display = 'none';
+                    show0.innerText = "About Me";
+                }
+            }
+            function show1() {
+                var show1 = document.getElementById('show1');
+                var hide1 = document.getElementById('hide1');
+                if (hide1.style.display === 'none') {
+                    hide1.style.display = 'block';
+                    show1.innerText = "【點擊隱藏】";
+                }
+                else {
+                    hide1.style.display = 'none';
+                    show1.innerText = "【點擊顯示】";
+                }
+            }
+            function show2() {
+                var show2 = document.getElementById('show2');
+                var hide2 = document.getElementById('hide2');
+                if (hide2.style.display === 'none') {
+                    hide2.style.display = 'block';
+                    show2.innerText = "【點擊隱藏】";
+                }
+                else {
+                    hide2.style.display = 'none';
+                    show2.innerText = "【點擊顯示】";
+                }
+            }
+            function show3() {
+                var show3 = document.getElementById('show3');
+                var hide3 = document.getElementById('hide3');
+                if (hide3.style.display === 'none') {
+                    hide3.style.display = 'block';
+                    show3.innerText = "【點擊隱藏】";
+                }
+                else {
+                    hide3.style.display = 'none';
+                    show3.innerText = "【點擊顯示】";
+                }
+            }
+            function show4() {
+                var show4 = document.getElementById('show4');
+                var hide4 = document.getElementById('hide4');
+                if (hide4.style.display === 'none') {
+                    hide4.style.display = 'block';
+                    show4.innerText = "【點擊隱藏】";
+                }
+                else {
+                    hide4.style.display = 'none';
+                    show4.innerText = "【點擊顯示】";
+                }
+            }
+            function show5() {
+                var show5 = document.getElementById('show5');
+                var hide5 = document.getElementById('hide5');
+                if (hide5.style.display === 'none') {
+                    hide5.style.display = 'block';
+                    show5.innerText = "【點擊隱藏】";
+                }
+                else {
+                    hide5.style.display = 'none';
+                    show5.innerText = "【點擊顯示】";
+                }
+            }
+            function show6() {
+                var show6= document.getElementById('show6');
+                var hide6 = document.getElementById('hide6');
+                if (hide6.style.display === 'none') {
+                    hide6.style.display = 'block';
+                    show6.innerText = "其他想要對我們說的事情？";
+                }
+                else {
+                    hide6.style.display = 'none';
+                    show6.innerText = "其他想要對我們說的事情？";
+                }
+            }
+        </script>
     </body>
