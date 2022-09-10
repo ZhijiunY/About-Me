@@ -32,6 +32,9 @@
     text-align:center; /*內文本的水平對齊方式*/
     float:center; /*浮動對齊*/
 }
+.w1{
+    font-size:16px;
+}
 
 .word{
     display:flex;
@@ -76,21 +79,6 @@
         font-size:larger;
     }
 }
-@media (max-width: 800px){
-        .Up{
-        flex-wrap: wrap;
-    }
-    .content{
-        width: 15%;
-        font-size:12px;
-        background-color: sienna;
-        color:white;
-    }
-   .word{
-       font-size:medium;
-   }
-}
-
 @media (max-width: 800px){
         .Up{
         flex-wrap: wrap;
