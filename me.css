@@ -90,3 +90,18 @@
        font-size:medium;
    }
 }
+
+@media (max-width: 800px){
+        .Up{
+        flex-wrap: wrap;
+    }
+    .content{
+        width: 15%;
+        font-size:12px;
+        background-color: sienna;
+        color:white;
+    }
+   .word{
+       font-size:medium;
+   }
+}
